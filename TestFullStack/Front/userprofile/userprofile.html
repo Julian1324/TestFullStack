@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Full Stack</title>
+    <link rel="stylesheet" href="./style/userprofile.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./src/userprofile.js"></script>
+
+</head>
+<body onload="init()">
+    <header>
+
+        <nav>
+            <div id="logo" onclick="backHome()">
+                
+            </div>
+
+            <div class="headerOptions" onclick="onLoginClick()">Settings
+            </div>
+
+            <div class="headerOptions" onclick="onSignOut()"> Sign out
+            </div>
+        </nav>
+    </header>
+
+    <div class="userBackground">
+
+        <div id="profileContainer">
+            <div class="userphoto"></div>
+            <span id="username">Your name here</span>
+        </div>
+
+        <div class="listContainer">
+            <span class="title">¡Welcome! What would you like to apply for today?</span>
+            <div class="listBox">
+                <div class="seccion">
+                    <div class="headquarter">Headquarter</div>
+                    <div class="acronym">Acronym</div>
+                    <div class="name">Name</div>
+                    <div class="location">Location</div>
+                    <div class="remove" style="background-image: none;">Remove</div>
+                </div>
+<!--  
+                <div class="seccion">
+                    <div class="headquarter">--</div>
+                    <div class="acronym">--</div>
+                    <div class="name">--</div>
+                    <div class="location">--</div>
+                    <div class="remove" onclick="removeBtn(this)"></div>
+                </div>
+
+                <div class="seccion">
+                    <div class="headquarter">--</div>
+                    <div class="acronym">--</div>
+                    <div class="name">--</div>
+                    <div class="location">--</div>
+                    <div class="remove" onclick="removeBtn(this)"></div>
+                </div>
+
+                <div class="seccion">
+                    <div class="headquarter">--</div>
+                    <div class="acronym">--</div>
+                    <div class="name">--</div>
+                    <div class="location">--</div>
+                    <div class="remove" onclick="removeBtn(this)"></div>
+                </div>-->
+
+            </div>
+
+            <button class="buttonAdd" onclick="onAddInstitution()">Request institution</button>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

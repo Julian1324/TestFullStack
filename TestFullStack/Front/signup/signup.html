@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Full Stack</title>
+    <link rel="stylesheet" href="./style/signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./src/signup.js"></script>
+
+</head>
+<body onload="isOnline()">
+    <header>
+
+        <nav>
+            <div id="logo" onclick="backHome()">
+                
+            </div>
+
+            <div class="headerOptions" onclick="onLoginClick()">Login
+            </div>
+
+            <div class="headerOptions" onclick="onSignUpClick()"> Sign in
+            </div>
+        </nav>
+    </header>
+
+    <div class="loginContainer">
+        <div class="loginDiv">
+            <div class="loginTitle">
+                <span>Sign up</span>
+            </div>
+
+            <input  id= "username" type="text" placeholder="Username">
+            <input id= "password" type="text" placeholder="Password">
+            <input id= "passwordc" type="text" placeholder="Confirm password">
+            <button onclick="onSignUpAction()">Sign up</button>
+        </div>
+    </div>
+    
+</body>
+</html>

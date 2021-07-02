@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Full Stack</title>
+    <link rel="stylesheet" href="./style/additionform.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./src/additionform.js"></script>
+
+</head>
+<body onload="init()">
+    <header>
+
+        <nav>
+            <div id="logo" onclick="backHome()">
+                
+            </div>
+
+            <div class="headerOptions" onclick="onLoginClick()">Settings
+            </div>
+
+            <div class="headerOptions" onclick="onSignInClick()"> Sign out
+            </div>
+        </nav>
+    </header>
+
+    <div class="userBackground">
+
+        <div id="profileContainer">
+            <div class="userphoto"></div>
+            <span id="username">Your name here</span>
+        </div>
+
+        <div class="addFormContainer">
+            <span class="title">¡Request a new institution or branch!</span>
+            <span class="description">Please enter the institution as "Partner", the legal entity.
+                The name of the institution should be in its official language.
+                <br>(e.g. For CIAT: Centro Internacional de Agricultura Tropical).
+            </span>
+
+            <div class="addForm">
+                <div id="isBranch">
+                    <span>Is this institution a branch?</span>
+                    <button class="yesNoBtn" onclick="isBranch(1)">Yes</button>
+                    <button class="yesNoBtn" onclick="isBranch(2)">No</button>
+                </div>
+
+                <div id="instHeadQuarter">
+                    <span style="margin-top: 3vh; margin-left: 2vw;">Select institution headquarter:</span>
+                    <select id="selectHeadQuarter" name="mySelect"> 
+                        <option style="font-size: 1.3em;" value="1" selected>Centro Internacional de Agricultura Tropical
+                        <option style="font-size: 1.3em;" value="2">Centro Internacional de la Papa 
+                        <option style="font-size: 1.3em;" value="3">Internacional Food Policy Research Institute
+                    </select>
+                </div>
+
+                <div id="acronymAndname">
+                    <div class="acronym">
+                        <span class="subtitle">Acronym:</span>
+                        <input class="textField" type="text" maxlength="9">
+                    </div>
+                    <div class="name">
+                        <span class="subtitle">Name:</span>
+                        <input class="textField" type="text">
+                    </div>
+                </div>
+
+                <div id="typeAndcountry">
+                    <div class="type">
+                        <span class="subtitle">Type:</span>
+                        <select class="selectTypeAndCountry" name="mySelect"> 
+                            <option style="font-size: 1.3em;" value="1" selected>Academic Institutions
+                            <option style="font-size: 1.3em;" value="2">Donor 
+                            <option style="font-size: 1.3em;" value="3">Non-Governmental Organization
+                            <option style="font-size: 1.3em;" value="4">Research Institution
+                    </select>
+                    </div>
+                    <div class="country">
+                        <span class="subtitle">Country:</span>
+                        <select class="selectTypeAndCountry" name="mySelect"> 
+                            <option style="font-size: 1.3em;" value="1" selected>Andorra
+                            <option style="font-size: 1.3em;" value="2">Belgium 
+                            <option style="font-size: 1.3em;" value="3">Canada
+                            <option style="font-size: 1.3em;" value="4">Denmark
+                            <option style="font-size: 1.3em;" value="5">Egypt
+                            <option style="font-size: 1.3em;" value="6">France
+                            <option style="font-size: 1.3em;" value="7">Grenada
+                            <option style="font-size: 1.3em;" value="8">Honduras
+                            <option style="font-size: 1.3em;" value="9">Ireland
+                            <option style="font-size: 1.3em;" value="10">Jamaica
+                            <option style="font-size: 1.3em;" value="11">South Korea
+                            <option style="font-size: 1.3em;" value="12">New Zealand
+                            <option style="font-size: 1.3em;" value="13">Puerto Rico
+                            <option style="font-size: 1.3em;" value="14">Vietnam
+                            <option style="font-size: 1.3em;" value="15">Colombia
+                            <option style="font-size: 1.3em;" value="16">Perú
+                            <option style="font-size: 1.3em;" value="17">United States
+                        </select>
+                    </div>
+                </div>
+
+                <div class="city">
+                    <span class="subtitle">City:</span>
+                    <input class="textField" type="text">
+                </div>
+
+                <div class="link">
+                    <span class="subtitle">If you know the partner website please paste the link below:</span>
+                    <input class="textFieldLink" type="text" placeholder="http://">
+                </div>
+            </div>
+
+            <button class="buttonAdd" onclick="onAddInstitution()">Add institution</button>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar{
+    width: auto;
+    background: rgb(48, 48, 48);
+    
+}
+
+html{
+  overflow-y: scroll;
+  scrollbar-color: rgb(172, 172, 172) rgb(48, 48, 48);
+}
+
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(172, 172, 172);
+}
+
+header{
+    display: flex;
+    background-color: #00953b;
+    height: 11vh;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.55);
+}
+
+#logo{
+    display: flex;
+    width: 5.5vw;
+    margin-right: 59vw;
+    background-image: url("../../assets/ciatLogo.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    width: 85%;
+}
+
+.headerOptions{
+    display: flex;
+    justify-content: center;
+    width: 7vw;
+    align-items: center;
+    margin-left: 2vw;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(85, 85, 85, 0.068);
+}
+
+.loginContainer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginDiv{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 0.3vw;
+    background-color: white;
+    align-items: center;
+}
+
+.loginTitle{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.178);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 0.3vw;
+}
+
+span{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+
+input{
+    width: 80%;
+    height: 5vh;
+    padding: 0.5vw;
+    margin-top: 3vh;
+    border-radius: 0.3vw;
+    border: 3px solid rgba(0, 0, 0, 0.192);
+    color: 3px solid rgba(0, 0, 0, 0.192);
+    outline: none;
+}
+
+input[type=text] {
+    transition: border 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    border: 3px solid #009adb;
+}
+
+button{
+    width: 55%;
+    height: 6vh;
+    margin-top: 6vh;
+    background-color: #00953b;
+    border: #00953b;
+    border-radius: 0.3vw;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 1.1em;
+}
